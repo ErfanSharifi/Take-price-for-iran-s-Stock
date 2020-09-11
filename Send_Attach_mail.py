@@ -14,7 +14,7 @@ class Send():
 
     def GiveMail(self, mail):
 
-        fromaddr = 'sharifi.stockreport@gmail.com'
+        fromaddr = ''
         toaddr = mail
         
         # instance of MIMEMultipart 
@@ -39,8 +39,8 @@ class Send():
         msg.attach(MIMEText(body, 'plain')) 
         
         # open the file to be sent  
-        path = "C:/Users/Erfan/OneDrive/Projects/SSM_Test/Outputs/99.6.31.xlsx"
-        filename = "99.6.31.xlsx"
+        path = ""
+        filename = ""
         attachment = open(path, "rb") 
         
         # instance of MIMEBase and named as p 
@@ -64,7 +64,7 @@ class Send():
         s.starttls() 
         
         # Authentication 
-        s.login(fromaddr, "Erfan123@#$%") 
+        s.login(fromaddr, "") 
         
         # Converts the Multipart msg into a string 
         text = msg.as_string() 
@@ -77,7 +77,7 @@ class Send():
 
 # def main():
     
-#     mail = 'e.sharify@gmail.com'
+#     mail = ''
 #     obj = Send()
 #     obj.GiveMail(mail)
 # main()
