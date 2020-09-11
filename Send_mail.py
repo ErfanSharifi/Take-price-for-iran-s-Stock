@@ -7,13 +7,13 @@ class Send():
 
         def GiveMail(self, mail):
 
-                user = 'sharifi.stockreport@gmail.com'
-                passwd = 'Erfan123@#$%'       
+                user = ''
+                passwd = ''       
                 smtpSer = 'smtp.gmail.com'      
                 smtpPort = 465      
 
-                # to = 'mrsharifi.it@gmail.com'
-                to = 'e.sharify@gmail.com'
+                
+                to = ''
                 subject = 'Daily Confirmation'
                 msgBody = """
                 Your Trades: \r\n\n
